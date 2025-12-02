@@ -27,6 +27,8 @@ class _SplashScreenState extends State<SplashScreen> {
   Timer? timer;
   // bool? isNotificationEnabled;
   nextScreen() {
+    route = Routes.onBoardingRoute;
+
     timer = Timer.periodic(1.seconds, (timer) {
       counter++;
       if (route.isNotNull && counter >= 5) {
@@ -49,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
             );
           },
         );
-        route = Routes.onBoardingRoute;
+       // route = Routes.onBoardingRoute;
       } else {
         UserModel? user = await getBlocData<AuthCubit>().getUser();
         print("tokkkkkkkkk  ${user?.token}");
