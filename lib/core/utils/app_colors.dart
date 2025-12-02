@@ -5,12 +5,35 @@ class AppColors {
   static final AppColors _instance = AppColors._();
   factory AppColors() => _instance;
 
+  static const Color primaryColor = Color(0xFF4CC8FA);
+  static const Color mutedPrimaryColor = Color(0xFFEAF6FF);
+  static const Color mainColor = Color(0xFF0D47A1);
+  static const Color secondaryColor = Color(0xFF4D99F2);
+  static const Color blue = Color(0xFF007BFF);
+  static const Color accentColor = Color(0XFF42A5F5);
+  static const Color blackText = Color(0XFF061219);
+  static const Color white = Color(0XFFFFFFFF);
+  static const Color black = Color(0XFF000000);
+  static const Color labelColor = Color(0XFF313131);
+  static const Color hintColor = Color(0XFF1E1E1E);
+  static const Color iconColor = Color(0XFF8C8C8C);
+  static Color gray = const Color(0XFF6C757D);
+  static Color darkGray = const Color(0XFFA7A9B7);
+  static Color lightGray = const Color(0XFF999999);
+  static Color grayBg = const Color(0XFFD9D9D9);
+  static Color bgColor = const Color(0XFFFAFAFA);
+  static Color scaffoldBgColor = const Color(0XFFF9FDFF);
+  static Color dotsColor = const Color(0XFFEBECF3);
+  static Color grayBorder = const Color(0XFFE6E6E6);
+  static Color red = const Color(0XFFCB1546);
+  static Color yellow = const Color(0XFFFFCC00);
+  static Color oliveGreen = const Color(0XFF697B7A);
+
   static const Color titleGray = Color(0xFF333333);
   static const Color unselectedTab = Color(0xFF9DB2CE);
   static const Color whiteLight = Color(0XFFFEFEFF);
   static const Color inactiveTrackSwitch = Color(0xFFA7A9B7);
   static const Color green = Color(0xFF14AE4E);
-  static const Color red = Color(0xFFD4183D);
   static const Color orange = Color(0xFFCB7F16);
   static const Color mutedOrange = Color(0xFFFFEDD4);
   static const Color mutedGreen = Color(0xFFDBFCE7);
@@ -22,28 +45,21 @@ class AppColors {
   static const Color borderColor4 = Color(0xFFFFD6A7);
   static const Color orange2 = Color(0xFFD95A00);
   static const Color lightOrange = Color(0xFFFFF7ED);
-  static Color darkGray = const Color(0xFF6B6B6B);
-
   static const Color brown = Color(0xFF877257);
   static const Color grey = Color(0xFFAAAAAA);
   static const Color dots = Color(0xFFD1D5DC);
   static const descriptionColor = Color(0xFF606268);
   static const Color borderColor = Color(0xFFE2E8F0);
   static const Color borderColor2 = Color(0xFF9e9e9e);
-  static const Color primaryColor = Color(0XFF0D47A1);
-  static const Color secondaryColor = Color(0XFF1976D2);
+
   static const Color gradientColorEnd = Color(0XFF3495E9);
   static const Color gradientColorStart = Color(0XFF0F50AA);
   static const Color statusColor = Color(0XFF277DD4);
-  static const Color accentColor = Color(0XFF42A5F5);
   static const Color mutedBlue = Color(0XFFE3F2FD);
   static const Color subTitleColor = Color(0XFF555555);
   static const Color circleBgBlue = Color(0XFF1A66FE);
   static const Color circleBgPurple = Color(0XFF5547FA);
   static const Color circleBgAqua = Color(0XFF00A4C8);
-  static const Color white = Color(0XFFFFFFFF);
-  static const Color black = Color(0XFF000000);
-  static const Color bgColor = Color(0XFFF5F7FA);
   static const Color grayHint = Color(0XFF8C8C8C);
   static const Color inactiveButtonBg = Color(0XFFE4E5E5);
   static const Color transparent = Colors.transparent;
@@ -62,5 +78,5 @@ class AppColors {
   static const Color scaffold = Color(0xFFF7FAFC); // soft off-white background
   static const Color silverGray = Color(0xffACACAC);
 
-  static const Color errorHeader=Color(0xFF31313199);
+  static const Color errorHeader = Color(0xFF31313199);
 }

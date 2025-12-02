@@ -39,7 +39,7 @@ class BuildPhoneNumberWidget extends StatelessWidget {
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12.r),
-          borderSide: const BorderSide(color: AppColors.red, width: 1.4),
+          borderSide: BorderSide(color: AppColors.red, width: 1.4),
         ),
       ),
       inputBorder: OutlineInputBorder(
