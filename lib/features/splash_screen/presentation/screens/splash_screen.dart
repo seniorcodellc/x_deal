@@ -30,7 +30,8 @@ class _SplashScreenState extends State<SplashScreen> {
     timer = Timer.periodic(1.seconds, (timer) {
       counter++;
       if (route.isNotNull && counter >= 5) {
-        route!.moveToCurrrentRouteAndRemoveAll(); // Navigate and remove splash screen
+        route!
+            .moveToCurrrentRouteAndRemoveAll(); // Navigate and remove splash screen
         timer.cancel();
       }
     });
@@ -54,7 +55,7 @@ class _SplashScreenState extends State<SplashScreen> {
         UserModel? user = await getBlocData<AuthCubit>().getUser();
         print("tokkkkkkkkk  ${user?.token}");
         if (user.isNotNull) {
-         //
+          //
           route = Routes.merchantDashboardRoute;
         } else {
           route = Routes.loginRoute;
@@ -72,7 +73,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return CustomBackground(
-      statusBarColor: AppColors.gradientColorStart,
+      statusBarColor: AppColors.secondaryColor,
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -81,36 +82,15 @@ class _SplashScreenState extends State<SplashScreen> {
             height: double.infinity,
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [
-                  AppColors.gradientColorStart,
-                  AppColors.gradientColorEnd,
-                ],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
+                colors: [AppColors.secondaryColor, AppColors.primaryColor],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
               ),
             ),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              CustomPngImage(image: AppAssets.splashImage),
-              32.vs,
-              Text(
-                AppStrings.appName.trans,
-                style: getSemiBoldTextStyle(
-                  color: AppColors.white,
-                  fontSize: 32,
-                ),
-              ),
-              8.vs,
-              Text(
-                AppStrings.splashBody.trans,
-                style: getRegularTextStyle(
-                  fontSize: 16,
-                  color: AppColors.white,
-                ),
-              ),
-            ],
+            children: [CustomPngImage(image: AppAssets.splashImage)],
           ),
         ],
       ),
