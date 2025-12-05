@@ -40,6 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
       bool isLanguageSaved = await getBlocData<LanguageCubit>()
           .getSavedLanguage();
       print("saved language is :$isLanguageSaved");
+      route = Routes.signUpByPhoneOrEmail;
       if (isNew.isTrue) {
         isNotificationEnabled = await checkNotificationPermissionAndDoOperation(
           context,
@@ -50,7 +51,6 @@ class _SplashScreenState extends State<SplashScreen> {
             );
           },
         );
-        route = Routes.onBoardingRoute;
       } else {
         UserModel? user = await getBlocData<AuthCubit>().getUser();
         print("tokkkkkkkkk  ${user?.token}");

@@ -38,8 +38,8 @@ class CustomTextFormField extends StatefulWidget {
   bool obscureText;
   bool isPassword = false;
   TextStyle? style = getRegularTextStyle(
-    fontSize: 12,
-    color: AppColors.taupeGray,
+    fontSize: 16,
+    color: AppColors.lightGray,
   );
   final String? Function(String?)? validator;
   final Widget? prefixIcon;
@@ -80,18 +80,19 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   Widget build(BuildContext context) {
     return Container(
       width: 343.w,
-      height: 48.h,
+      height: 56.h,
       decoration: BoxDecoration(
         color: widget.backgroundColor ?? AppColors.white,
         borderRadius: BorderRadius.circular(widget.radiusOfContainer ?? 15.r),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.shadowColor.withValues(
-              alpha: widget.shadow ?? 0.1,
-            ),
-            blurRadius: 4.r,
-          ),
-        ],
+        border: Border.all(color: AppColors.grayBorder),
+        // boxShadow: [
+        //   BoxShadow(
+        //     color: AppColors.shadowColor.withValues(
+        //       alpha: widget.shadow ?? 0.1,
+        //     ),
+        //     blurRadius: 4.r,
+        //   ),
+        // ],
       ),
       child: TextFormField(
         controller: widget.controller,
@@ -120,7 +121,10 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
               widget.padding ??
               EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
           hintText: widget.hintText,
-          hintStyle: widget.style,
+          hintStyle: getRegularTextStyle(
+            fontSize: 16,
+            color: AppColors.lightGray,
+          ),
           border: InputBorder.none,
           fillColor: Colors.transparent,
           filled: true,
@@ -143,10 +147,13 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                         });
                       },
                       child: widget.obscureText
-                          ? Icon(Icons.visibility_off, color: AppColors.liGray)
+                          ? Icon(
+                              Icons.visibility_off,
+                              color: AppColors.lightGray,
+                            )
                           : Icon(
                               Icons.visibility_rounded,
-                              color: AppColors.liGray,
+                              color: AppColors.lightGray,
                             ),
                     )
                   : null),

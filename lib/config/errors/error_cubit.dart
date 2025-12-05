@@ -15,6 +15,7 @@ enum Errors {
   CITY_ERROR,
   VERIFICATION_ERROR,
   CHOOSE_MERCHANT_ERROR,
+  CODE_ERROR,
 }
 
 Map<Errors, String> getError = {
@@ -32,6 +33,7 @@ Map<Errors, String> getError = {
   Errors.NAME_ERROR: AppStrings.nameError.trans,
   Errors.VERIFICATION_ERROR: AppStrings.fieldIsRequired.trans,
   Errors.CHOOSE_MERCHANT_ERROR: AppStrings.fieldIsRequired.trans,
+  Errors.CODE_ERROR: AppStrings.codeError.trans,
 };
 
 class ErrorCubit extends Cubit<CubitStates> {
