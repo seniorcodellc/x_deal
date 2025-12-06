@@ -58,9 +58,9 @@ class _SplashScreenState extends State<SplashScreen> {
         print("tokkkkkkkkk  ${user?.token}");
         if (user.isNotNull) {
           //
-          route = Routes.merchantDashboardRoute;
+          route = Routes.onBoardingRoute;
         } else {
-          route = Routes.loginRoute;
+          route = Routes.onBoardingRoute;
         }
       }
     });

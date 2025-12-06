@@ -1,9 +1,16 @@
+import 'package:x_deal/features/authentication/presentation/screens/add_phone_screen.dart';
+import 'package:x_deal/features/authentication/presentation/screens/success_phone.dart';
+import 'package:x_deal/features/forget_password/presentation/screens/enter_code_screen.dart';
+import 'package:x_deal/features/forget_password/presentation/screens/forget_password_screen.dart';
+import 'package:x_deal/features/forget_password/presentation/screens/success_password.dart';
 import 'package:x_deal/features/on_boarding/presentation/screens/onboarding_screen.dart';
 
 import 'package:nested/nested.dart';
 
 import '../../exports.dart';
 
+import '../../features/authentication/presentation/screens/login_screen.dart';
+import '../../features/forget_password/presentation/screens/reset_password.dart';
 import '../../features/splash_screen/presentation/screens/splash_screen.dart';
 
 class RouteGenerator {
@@ -21,6 +28,57 @@ class RouteGenerator {
           child: OnboardingScreen(),
           routeSettings: routeSettings,
         );
+      case Routes.loginRoute:
+        return buildPageRoute<T>(
+          providers: [
+            BlocProvider<ErrorCubit>(create: (context) => ErrorCubit()),
+          ],
+            child: LoginScreen(),
+          routeSettings: routeSettings,
+        );
+        case Routes.forgetPasswordRoute:
+        return buildPageRoute<T>(
+          providers: [
+            BlocProvider<ErrorCubit>(create: (context) => ErrorCubit()),
+          ],
+            child: ForgetPasswordScreen(),
+          routeSettings: routeSettings,
+        );
+        case Routes.enterCodeRoute:
+        return buildPageRoute<T>(
+          providers: [
+            BlocProvider<ErrorCubit>(create: (context) => ErrorCubit()),
+          ],
+            child: EnterCodeScreen(),
+          routeSettings: routeSettings,
+        );
+        case Routes.resetPasswordRoute:
+        return buildPageRoute<T>(
+          providers: [
+            BlocProvider<ErrorCubit>(create: (context) => ErrorCubit()),
+          ],
+            child: ResetPasswordScreen(),
+          routeSettings: routeSettings,
+        );
+        case Routes.successPassword:
+        return buildPageRoute<T>(
+            child: SuccessPassword(),
+          routeSettings: routeSettings,
+        );
+        case Routes.successPhone:
+        return buildPageRoute<T>(
+            child: SuccessPhone(),
+          routeSettings: routeSettings,
+        );
+        case Routes.addPhone:
+        return buildPageRoute<T>(
+          providers: [
+            BlocProvider<ErrorCubit>(create: (context) => ErrorCubit()),
+          ],
+            child: AddPhoneScreen(),
+          routeSettings: routeSettings,
+        );
+
 
       default:
         return MaterialPageRoute(

@@ -1,8 +1,8 @@
-import 'package:x_deal/core/widgets/custom_background.dart';
-import 'package:x_deal/features/on_boarding/presentation/managers/onboarding_manager_cubit.dart';
-import 'package:x_deal/features/on_boarding/presentation/widgets/onboarding_buttons.dart';
-import '../../../../exports.dart';
+import 'package:x_deal/exports.dart';
+
+import '../../../../core/widgets/custom_background.dart';
 import '../../data/static/static.dart';
+import '../managers/onboarding_manager_cubit.dart';
 import '../widgets/onboarding_dots.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -18,57 +18,64 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   void nextPage() async {
     if (currentPage < OnboardingStatics.onBoardingItems.length - 1) {
-      pageController.nextPage(duration: const Duration(milliseconds: 200), curve: Curves.easeInOut);
+      pageController.nextPage(duration: const Duration(milliseconds: 100), curve: Curves.easeInOut);
     } else {
       await context.read<OnboardingManagerCubit>().cachedNewInstall();
+      Routes.loginRoute.moveTo();
     }
   }
-
+  void skip() {
+    if (currentPage < OnboardingStatics.onBoardingItems.length - 1) {
+      pageController.jumpToPage(OnboardingStatics.onBoardingItems.length - 1);
+    } else {
+      context.read<OnboardingManagerCubit>().cachedNewInstall();
+      Routes.loginRoute.moveTo();
+    }
+  }
   @override
   Widget build(BuildContext context) {
+    final bool isLastPage = currentPage == OnboardingStatics.onBoardingItems.length - 1;
     return CustomBackground(
-      backgroundColor: AppColors.bgColor,
+      backgroundColor: AppColors.white,
       child: PageView.builder(
         controller: pageController,
         physics: const BouncingScrollPhysics(),
-        onPageChanged: (int page) {
-          setState(() {
-            currentPage = page;
-          });
-        },
+        onPageChanged: (int page) {setState(() {currentPage = page;});},
         itemCount: OnboardingStatics.onBoardingItems.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: getPadding(horizontal: 16.0.w),
+            padding: getPadding(horizontal: 22.0.w),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                180.vs,
+                80.vs,
                 CustomPngImage(image: OnboardingStatics.onBoardingItems[index].imagePath),
-                35.vs,
+                45.vs,
                 Text(
-                  OnboardingStatics.onBoardingItems[index].title.trans,
-                  style: getSemiBoldTextStyle(fontSize: 24.sp, color: AppColors.primaryColor),
-                  textAlign: TextAlign.center,
-                ),
-                10.vs,
-                Padding(
-                  padding: getPadding(horizontal: 30.0),
-                  child: Text(
-                    OnboardingStatics.onBoardingItems[index].subTitle.trans,
-                    textAlign: TextAlign.center,
-                    style: getRegularTextStyle(fontSize: 14.sp, color: AppColors.subTitleColor),
-                  ),
-                ),
-                10.vs,
+                  OnboardingStatics.onBoardingItems[index].title.trans, textAlign: TextAlign.center,
+                  style: getRegularTextStyle(fontSize: 16, color: AppColors.primaryColor),),
+                8.vs,
+                Text(
+                  OnboardingStatics.onBoardingItems[index].subTitle.trans, textAlign: TextAlign.center,
+                  style: getRegularTextStyle(fontSize: 22, color: AppColors.blackText),),
+                25.vs,
                 OnboardingDots(currentPage: currentPage),
-                90.vs,
-                OnboardingButtons(
-                  onTap: () {
-                    nextPage();
-                  },
-                  text: currentPage == OnboardingStatics.onBoardingItems.length - 1 ? AppStrings.startNow.trans : AppStrings.next.trans,
+                40.vs,
+                Row(
+                  children: [
+                    CustomButton(
+                      text: isLastPage ? AppStrings.login.trans : AppStrings.next.trans,
+                      onPressed: (){ nextPage();}, height: 52.0.h,
+                      backgroundColor: AppColors.primaryColor, borderRadius: 25, width: 155.w,
+                    ),
+                    12.hs,
+                    CustomButton(
+                      text: isLastPage? AppStrings.createAccount.trans : AppStrings.skip.trans,
+                      onPressed: () async {skip();},
+                      height: 52.0.h, backgroundColor: AppColors.white,
+                      borderColor: AppColors.primaryColor, borderRadius: 25, width: 155.w, textColor: AppColors.primaryColor,
+                    ),
+                  ],
                 ),
               ],
             ),

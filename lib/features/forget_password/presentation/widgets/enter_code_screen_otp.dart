@@ -10,30 +10,29 @@ class EnterCodeScreenOtp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         PinCodeTextField(
           controller: otpController,
           appContext: context,
-          length: 5,
+          length: 6,
           autoFocus: true,
           obscureText: false,
           keyboardType: TextInputType.number,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          textStyle: getBoldTextStyle(fontSize: 24,color:AppColors.primaryColor),
           pinTheme: PinTheme(
             shape: PinCodeFieldShape.box,
             borderRadius: BorderRadius.circular(15.r),
-            fieldHeight: 50.h,
+            fieldHeight: 52.h,
             fieldWidth: 50.w,
-            fieldOuterPadding: getPadding(horizontal: 8.w),
-            activeColor: AppColors.white,
-            selectedColor: AppColors.white,
-            inactiveColor: AppColors.white,
+            fieldOuterPadding: getPadding(horizontal: 3.w),
+            inactiveColor: AppColors.iconColor,
+            activeColor: AppColors.black,
+            selectedColor: AppColors.black,
             selectedFillColor: AppColors.white,
             activeFillColor: AppColors.white,
             inactiveFillColor: AppColors.white,
           ),
-          animationDuration: const Duration(milliseconds: 300),
+          animationDuration: const Duration(milliseconds: 200),
           enableActiveFill: true,
           onTap: () {},
         ),

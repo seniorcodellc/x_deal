@@ -14,7 +14,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
           color: AppColors.primaryColor,
         ),
       ),
-      backgroundColor: AppColors.scaffold,
+      backgroundColor: AppColors.white,
       automaticallyImplyLeading: false,
       leadingWidth: 56.w,
       centerTitle: true,
@@ -22,7 +22,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
         onTap: () {
           pop();
         },
-        child: Icon(Icons.arrow_back, color: AppColors.primaryColor,size: 28,),
+        child: Icon(Icons.arrow_back, color: AppColors.mainColor,size: 28,),
       ),
       actions: [],
     );

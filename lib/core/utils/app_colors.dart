@@ -5,7 +5,7 @@ class AppColors {
   static final AppColors _instance = AppColors._();
   factory AppColors() => _instance;
 
-  static const Color primaryColor = Color(0xFF4CC8FA);
+  static const Color primaryColor = Color(0xFF4CB7F7);
   static const Color mutedPrimaryColor = Color(0xFFEAF6FF);
   static const Color mainColor = Color(0xFF0D47A1);
   static const Color secondaryColor = Color(0xFF4D99F2);
@@ -16,12 +16,12 @@ class AppColors {
   static const Color black = Color(0XFF000000);
   static const Color labelColor = Color(0XFF313131);
   static const Color hintColor = Color(0XFF1E1E1E);
-  static const Color iconColor = Color(0XFF8C8C8C);
+  static const Color iconColor = Color(0XFFE5E5E5);
   static Color gray = const Color(0XFF6C757D);
   static Color darkGray = const Color(0XFFA7A9B7);
   static Color lightGray = const Color(0XFF999999);
   static Color grayBg = const Color(0XFFD9D9D9);
-  static Color bgColor = const Color(0XFFFAFAFA);
+  static Color bgColor = const Color(0XFFFAFDFF);
   static Color scaffoldBgColor = const Color(0XFFF9FDFF);
   static Color dotsColor = const Color(0XFFEBECF3);
   static Color grayBorder = const Color(0XFFE6E6E6);

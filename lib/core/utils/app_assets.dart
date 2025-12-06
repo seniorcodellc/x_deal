@@ -167,4 +167,5 @@ class AppAssets {
   static String shareMoney = "${PngImages.imagesPath}share_money.png";
   static String shareMoney2 = "${PngImages.imagesPath}share_money2.png";
   static String waitGift = "${PngImages.imagesPath}wait_gift.png";
+  static String decoration = "${PngImages.imagesPath}decoration.png";
 }

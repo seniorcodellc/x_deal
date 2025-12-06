@@ -190,11 +190,12 @@ class AppStrings {
   /// **************************** Authentication ************************************
   static const String login = "login";
   static const String logInWelcome = "logInWelcome";
+  static const String logInWelcomeSubtitle = "logInWelcomeSubtitle";
   static const String email = "email";
+  static const String emailOrPhone = "emailOrPhone";
   static const String password = "password";
   static const String confirmPassword = "confirmPassword";
   static const String forgetPassword = "forgetPassword";
-  static const String haveNoAccount = "haveNoAccount";
   static const String signUpAsMerchant = "signUpAsMerchant";
   static const String signUpAsTech = "signUpAsTech";
   static const String signUpAsNewTech = "signUpAsNewTech";
@@ -227,7 +228,13 @@ class AppStrings {
   static const String emailHint = "emailHint";
   static const String fullName = "fullName";
   static const String passwordHint = "********";
-
+  static const String dontHaveAccount = 'dontHaveAccount';
+  static const String createAccount = 'createAccount';
+  static const String addPhoneNumber = 'addPhoneNumber';
+  static const String updateYourPhone = 'updateYourPhone';
+  static const String phoneUpdateDescription = 'phoneUpdateDescription';
+  static const String phoneUpdatedSuccessTitle = 'phoneUpdatedSuccessTitle';
+  static const String phoneUpdatedSuccessSubtitle = 'phoneUpdatedSuccessSubtitle';
   /// **************************** Splash ************************************
   static const String splashHeader = "splashHeader";
   static const String appName = "appName";
@@ -242,6 +249,8 @@ class AppStrings {
   static const String resetPassword = "resetPassword";
   static const String yourEmail = "yourEmail";
   static const String forgetPasswordQuestionMark = "forgetPasswordQuestionMark";
+  static const String passwordResetSuccessTitle = 'passwordResetSuccessTitle';
+  static const String passwordResetSuccessSubtitle = 'passwordResetSuccessSubtitle';
 
   /// **************************** Forget password screen2 ************************************
   ///

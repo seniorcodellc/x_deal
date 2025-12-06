@@ -80,18 +80,17 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   Widget build(BuildContext context) {
     return Container(
       width: 343.w,
-      height: 48.h,
+      height: 58.h,
       decoration: BoxDecoration(
         color: widget.backgroundColor ?? AppColors.white,
-        borderRadius: BorderRadius.circular(widget.radiusOfContainer ?? 15.r),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.shadowColor.withValues(
-              alpha: widget.shadow ?? 0.1,
-            ),
-            blurRadius: 4.r,
-          ),
-        ],
+        borderRadius: BorderRadius.circular(widget.radiusOfContainer ?? 10.r),
+        border: Border.all(color: AppColors.iconColor),
+        // boxShadow: [
+        //   BoxShadow(
+        //     color: AppColors.shadowColor.withValues(alpha: widget.shadow ?? 0.1,),
+        //     blurRadius: 4.r,
+        //   ),
+        // ],
       ),
       child: TextFormField(
         controller: widget.controller,
@@ -118,7 +117,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         decoration: InputDecoration(
           contentPadding:
               widget.padding ??
-              EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+              EdgeInsets.symmetric(horizontal: 16.w, vertical: 18.h),
           hintText: widget.hintText,
           hintStyle: widget.style,
           border: InputBorder.none,
@@ -143,10 +142,10 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                         });
                       },
                       child: widget.obscureText
-                          ? Icon(Icons.visibility_off, color: AppColors.liGray)
+                          ? Icon(Icons.visibility_off, color: AppColors.lightGray)
                           : Icon(
                               Icons.visibility_rounded,
-                              color: AppColors.liGray,
+                              color: AppColors.lightGray,
                             ),
                     )
                   : null),

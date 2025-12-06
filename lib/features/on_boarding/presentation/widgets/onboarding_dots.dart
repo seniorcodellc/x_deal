@@ -1,6 +1,4 @@
 import 'package:x_deal/exports.dart';
-import '../../../../exports.dart';
-
 class OnboardingDots extends StatelessWidget {
   const OnboardingDots({super.key, required this.currentPage});
   final int currentPage;
@@ -9,7 +7,7 @@ class OnboardingDots extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 28.h),
       decoration: BoxDecoration(
-        color: AppColors.bgColor,
+        color: AppColors.white,
         borderRadius: BorderRadius.circular(12.r),
       ),
       child: Padding(
@@ -19,18 +17,17 @@ class OnboardingDots extends StatelessWidget {
           children: List.generate(
             3,
             (index) => Container(
-              margin: getMargin(horizontal: 6.0.w),
-              width: index == currentPage ? 30.w : 10.w,
-              height: 10.w,
+              margin: getMargin(horizontal: 3.0.w),
+              width:  28.w,
+              height: 6.w,
               decoration: ShapeDecoration(
                 color: index == currentPage
                     ? AppColors.primaryColor
-                    : AppColors.dots,
-                shape: index == currentPage
-                    ? RoundedRectangleBorder(
+                    : AppColors.mutedPrimaryColor,
+                shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15.r),
                       )
-                    : CircleBorder(),
+                    ,
               ),
             ),
           ),
