@@ -94,7 +94,7 @@ class AppAssets {
 
   //....................XDeal.................................................
   static String profile = "${SvgImages.svgPath}profile.svg";
-  static String bill = "${SvgImages.svgPath}bill.svg";
+  static String bill = "${SvgImages.svgPath}bill_filled_circle.svg";
   static String darkTheme = "${SvgImages.svgPath}dark_theme.svg";
   static String languages = "${SvgImages.svgPath}language.svg";
   static String repeatedQuestions =
@@ -113,6 +113,7 @@ class AppAssets {
   static String fav = "${SvgImages.svgPath}fav.svg";
   static String cilantroLogo = "${SvgImages.svgPath}cilantro_logo.svg";
   static String elabdLogo = "${SvgImages.svgPath}elabd_logo.svg";
+  static String like = "${SvgImages.svgPath}like.svg";
   //! PNG
   static String logo = "${PngImages.imagesPath}logo.png";
   static String logoText = "${PngImages.imagesPath}logo_text.png";
@@ -125,6 +126,7 @@ class AppAssets {
   static String arabic = "${PngImages.imagesPath}arabic.png";
   static String searchNoOffers = "${PngImages.imagesPath}search_no_offers.png";
   static String searchFailed = "${PngImages.imagesPath}search_failed.png";
+  static String rewards1 = "${PngImages.imagesPath}rewards1.png";
 
   //....................................XDeal................................................
   static String message = "${PngImages.imagesPath}message.png";

@@ -3,21 +3,25 @@ class Assets {
   Assets._();
 
   static const String cairoCairoBold = 'assets/fonts/cairo/Cairo-Bold.ttf';
-  static const String cairoCairoExtraBold = 'assets/fonts/cairo/Cairo-ExtraBold.ttf';
+  static const String cairoCairoExtraBold =
+      'assets/fonts/cairo/Cairo-ExtraBold.ttf';
   static const String cairoCairoLight = 'assets/fonts/cairo/Cairo-Light.ttf';
   static const String cairoCairoMedium = 'assets/fonts/cairo/Cairo-Medium.ttf';
-  static const String cairoCairoRegular = 'assets/fonts/cairo/Cairo-Regular.ttf';
-  static const String cairoCairoSemiBold = 'assets/fonts/cairo/Cairo-SemiBold.ttf';
+  static const String cairoCairoRegular =
+      'assets/fonts/cairo/Cairo-Regular.ttf';
+  static const String cairoCairoSemiBold =
+      'assets/fonts/cairo/Cairo-SemiBold.ttf';
   static const String iconsAccept = 'assets/icons/accept.svg';
   static const String iconsAdd = 'assets/icons/add.svg';
   static const String iconsAddProduct = 'assets/icons/add_product.svg';
   static const String iconsArrow = 'assets/icons/arrow.svg';
   static const String iconsArrowBack = 'assets/icons/arrow_back.svg';
   static const String iconsArrowLeft = 'assets/icons/arrow_left.svg';
-  static const String iconsAvailablePoints = 'assets/icons/available_points.svg';
+  static const String iconsAvailablePoints =
+      'assets/icons/available_points.svg';
   static const String iconsBackArrow = 'assets/icons/back_arrow.svg';
   static const String iconsBarcode = 'assets/icons/barcode.svg';
-  static const String iconsBill = 'assets/icons/bill.svg';
+  static const String iconsBill = 'assets/icons/bill_filled_circle.svg';
   static const String iconsCalendar = 'assets/icons/calendar.svg';
   static const String iconsCameraError = 'assets/icons/camera_error.svg';
   static const String iconsCameraFrame = 'assets/icons/camera_frame.svg';
@@ -96,10 +100,12 @@ class Assets {
   static const String imagesAppIcon = 'assets/images/app_icon.png';
   static const String imagesArabic = 'assets/images/arabic.png';
   static const String imagesBuffaloLogo = 'assets/images/buffalo_logo.png';
-  static const String imagesBuffaloSaleImage = 'assets/images/buffalo_sale_image.png';
+  static const String imagesBuffaloSaleImage =
+      'assets/images/buffalo_sale_image.png';
   static const String imagesCameraScan = 'assets/images/camera_scan.png';
   static const String imagesCilantroLogo = 'assets/images/cilantro_logo.png';
-  static const String imagesCilantroSaleImage = 'assets/images/cilantro_sale_image.png';
+  static const String imagesCilantroSaleImage =
+      'assets/images/cilantro_sale_image.png';
   static const String imagesDefacto = 'assets/images/defacto.png';
   static const String imagesDejavu = 'assets/images/dejavu.png';
   static const String imagesDunkinDonuts = 'assets/images/dunkin_donuts.png';
@@ -114,14 +120,15 @@ class Assets {
   static const String imagesOnboarding1 = 'assets/images/onboarding1.png';
   static const String imagesOnboarding2 = 'assets/images/onboarding2.png';
   static const String imagesOnboarding3 = 'assets/images/onboarding3.png';
-  static const String imagesRestaurantCafe = 'assets/images/restaurant_cafe.png';
+  static const String imagesRestaurantCafe =
+      'assets/images/restaurant_cafe.png';
   static const String imagesSplashImg = 'assets/images/splash_img.png';
-  static const String imagesSuccessPassword = 'assets/images/success_password.png';
+  static const String imagesSuccessPassword =
+      'assets/images/success_password.png';
   static const String imagesSuccessScan = 'assets/images/success_scan.png';
   static const String imagesWafarImage1 = 'assets/images/wafar_image1.png';
   static const String imagesWafarImage2 = 'assets/images/wafar_image2.png';
   static const String imagesWafarImage3 = 'assets/images/wafar_image3.png';
   static const String translationsArEG = 'assets/translations/ar-EG.json';
   static const String translationsEnUS = 'assets/translations/en-US.json';
-
 }

@@ -19,21 +19,19 @@ class BottomNavOperationCubit extends Cubit<int> {
 
   int index = 0;
   changIndex(int index) {
-    if(this.index.isNotEqualTo(index)){
-      if(index==0){
-        Routes.merchantDashboardRoute.moveTo();
-      }else if(index==1){
+    if (this.index.isNotEqualTo(index)) {
+      if (index == 0) {
+        Routes.home.moveTo();
+      } else if (index == 1) {
         Routes.duesRoute.moveTo();
-      }else if(index==2){
+      } else if (index == 2) {
         Routes.operationsHistoryRoute.moveTo();
-      }else if(index==3){
+      } else if (index == 3) {
         Routes.merchantSettings.moveTo();
       }
-      this.index=index;
+      this.index = index;
       emit(index);
-
     }
-
   }
 
   goToHome() {

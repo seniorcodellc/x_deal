@@ -7,11 +7,14 @@ class CustomPngImage extends StatelessWidget {
     super.key,
     required this.image,
     this.alignment = Alignment.center,
+    this.color,
+
     // this.width,
     // this.height,
   });
 
   final String image;
+  final Color? color;
 
   // double? width;
   // double? height;
@@ -25,7 +28,7 @@ class CustomPngImage extends StatelessWidget {
             // width: width,
             // height: height,
             fit: BoxFit.fill,
-            color: AppColors.transparent,
+            color: color ?? AppColors.transparent,
             image: NetworkImage(image),
           )
         : Image(fit: BoxFit.fill, image: AssetImage(image));

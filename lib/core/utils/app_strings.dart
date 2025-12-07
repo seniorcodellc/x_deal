@@ -76,7 +76,7 @@ class AppStrings {
   static const String from = "from";
   static const String bedrooms = "bedrooms";
   static const String to = "to";
-  static const String category = "category";
+  static const String category = "categories";
   static const String filter = "filter";
   static const String back = "back";
   static const String priceRange = "priceRange";
@@ -265,6 +265,17 @@ class AppStrings {
   static const String giftPopUpHeader =
       "أدخل رمز كود المشاركة لتسجيلك كفريق \n مع المشارك";
   static const String codeError = " هذا كود خطأ أعد المحاولة بشكل صحيح";
+
+  /// **************************** Home ************************************
+
+  static const String homeSearchHint = "ابحث هنا عن متجرك المفضل";
+  static const String yourPrivateCode = "كودك الخاص";
+  static const String shareCode = "كود المشاركة";
+  static const String xCoin = "أكس كوين";
+  static const String categories = "الفئات";
+  static const String restaurantCafe = "مطاعم\nوكافيهات";
+  static const String games = "ألعاب";
+  static const String fashion = "موضة";
 
   /// **************************** Forget password screen ************************************
   ///

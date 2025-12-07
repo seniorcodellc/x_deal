@@ -42,7 +42,7 @@
   "waitingForAcceptRegisterText" :
   "في انتظار موافقة المسؤول",
   "splashHeader":"أهلا بك فى تطبيق نقاط الولاء",
-  "appName": "برنامج نقاط الولاء",
+  "appName": "أكس ديل",
   "splashBody": "نظام إدارة النقاط الذكي",
   "phoneError": "خطأ الهاتف",
   "gallery": "مكتبة الصور",
@@ -449,7 +449,7 @@
   "scanError": "باركود غير مسجل",
   "serialNumber": "الرقم التسلسلى",
   "tryAgain": "اعاده المحاولة مرة أخرى",
-  "goToHomepage": "الصفحة الرئيسية",
+  "goToHomepage": "الصفحةالرئيسية",
   "viewDetailsButton": "عرض التفاصيل",
 "inActive": "غير نشط",
   "verificationQuestion": " سؤال  التحقق من التاجر",

@@ -1,5 +1,6 @@
 import 'package:x_deal/features/authentication/presentation/screens/add_phone_screen.dart';
 import 'package:x_deal/features/authentication/presentation/screens/success_phone.dart';
+import 'package:x_deal/features/bottom_navigation/presentation/widget/bottom_navigation_widget.dart';
 import 'package:x_deal/features/forget_password/presentation/screens/enter_code_screen.dart';
 import 'package:x_deal/features/forget_password/presentation/screens/forget_password_screen.dart';
 import 'package:x_deal/features/forget_password/presentation/screens/success_password.dart';
