@@ -66,7 +66,7 @@ class LoginScreen extends StatelessWidget {
   Widget buildNoAccount() {
     return GestureDetector(
       onTap: () {
-        Routes.forgetPasswordRoute.moveTo();
+        Routes.signUpByPhoneOrEmail.moveTo();
       },
       child: Center(
         child: RichText(

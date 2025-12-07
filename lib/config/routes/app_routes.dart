@@ -3,12 +3,16 @@ import 'package:x_deal/features/authentication/presentation/screens/success_phon
 import 'package:x_deal/features/forget_password/presentation/screens/enter_code_screen.dart';
 import 'package:x_deal/features/forget_password/presentation/screens/forget_password_screen.dart';
 import 'package:x_deal/features/forget_password/presentation/screens/success_password.dart';
+import 'package:x_deal/features/authentication/presentation/screens/otp_screen.dart';
+import 'package:x_deal/features/authentication/presentation/screens/sign_up_by_phone_or_email.dart';
+import 'package:x_deal/features/authentication/presentation/screens/sign_up_screen.dart';
 import 'package:x_deal/features/on_boarding/presentation/screens/onboarding_screen.dart';
 
 import 'package:nested/nested.dart';
 
 import '../../exports.dart';
 
+import '../../features/authentication/presentation/widgets/gift_pop_up.dart';
 import '../../features/authentication/presentation/screens/login_screen.dart';
 import '../../features/forget_password/presentation/screens/reset_password.dart';
 import '../../features/splash_screen/presentation/screens/splash_screen.dart';
@@ -26,6 +30,30 @@ class RouteGenerator {
       case Routes.onBoardingRoute:
         return buildPageRoute<T>(
           child: OnboardingScreen(),
+          routeSettings: routeSettings,
+        );
+      case Routes.signUpByPhoneOrEmail:
+        return buildPageRoute<T>(
+          child: SignUpByPhoneOrEmail(),
+          providers: [
+            BlocProvider(create: (BuildContext context) => ErrorCubit()),
+          ],
+          routeSettings: routeSettings,
+        );
+      case Routes.signUp:
+        return buildPageRoute<T>(
+          child: SignUpScreen(),
+          providers: [
+            BlocProvider(create: (BuildContext context) => ErrorCubit()),
+          ],
+          routeSettings: routeSettings,
+        );
+      case Routes.otpRoute:
+        return buildPageRoute<T>(
+          child: OtpScreen(),
+          providers: [
+            BlocProvider(create: (BuildContext context) => ErrorCubit()),
+          ],
           routeSettings: routeSettings,
         );
       case Routes.loginRoute:

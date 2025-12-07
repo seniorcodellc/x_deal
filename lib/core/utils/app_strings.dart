@@ -225,7 +225,6 @@ class AppStrings {
   static const String acceptMessage1 = "acceptMessage1";
   static const String acceptMessage2 = "acceptMessage2";
   static const String phoneNumHint = "phoneNumHint";
-  static const String emailHint = "emailHint";
   static const String fullName = "fullName";
   static const String passwordHint = "********";
   static const String dontHaveAccount = 'dontHaveAccount';
@@ -240,6 +239,31 @@ class AppStrings {
   static const String appName = "appName";
   static const String splashBody = "splashBody";
   static const String appDescription = "appDescription";
+
+  /// **************************** Sign Up************************************
+  ///
+  static const String createAccountInXDeal = "انشاء حساب فى أكس ديل";
+  static const String writeHere = "اكتب هنا";
+
+  /// **************************** Sign Up By Phone Or Email ************************************
+  static const String headerWelcome = "مرحبا بك فى أكس ديل";
+  static const String areYouHaveCode = "هل لديك كود مشاركة؟";
+  static const String enterCode = "أدخل الرمز لتفعيل";
+  static const String completeSignUpAccount =
+      "باكمالك انشاء الحساب فأنت موافق على ";
+  static const String haveAccount = "لديك حساب ؟ ";
+  static const String egCode = "(+20)";
+  static const String emailHint = "أدخل البريد الالكتروني هنا";
+  static const String checkCode = "رمز التحقق";
+  static const String checkCodeButton = "التحقق من الرمز";
+  static const String sendCodeToNumForVerify =
+      "أرسلنا رمز التحقق إلى رقم 010204356712 الرجاء التحقق من الرسائل وإدخال الرمز فى الأسفل";
+  static const String notDeliverCheckCode = "لم يصلك رمز التحقق  بعد؟";
+  static const String resend = " أعد الإرسال";
+  static const String sharedCode = "كود المشاركة";
+  static const String giftPopUpHeader =
+      "أدخل رمز كود المشاركة لتسجيلك كفريق \n مع المشارك";
+  static const String codeError = " هذا كود خطأ أعد المحاولة بشكل صحيح";
 
   /// **************************** Forget password screen ************************************
   ///
@@ -258,20 +282,14 @@ class AppStrings {
   static const String createNewPassword = "createNewPassword";
 
   /// **************************** Enter Code screen ************************************
-  static const String checkCode = "checkCode";
   static const String enterCodeScreenHeader = "enterCodeScreenHeader";
   static const String checkCodeConclusion1 = "checkCodeConclusion1";
   static const String checkCodeConclusion2 = "checkCodeConclusion2";
-
-
-
-
 
   static const String notifications = "notifications";
   static const String pointsSummary = "pointsSummary";
   static const String save = "save";
   static const String cancel = "cancel";
-
 
   /// **************************** settings ************************************
   static const String settings = "settings";
@@ -285,7 +303,6 @@ class AppStrings {
   static const String operationsLogs = "operationsLogs";
 
   static const String startNow = "startNow";
-
 
   /// **************************** error handler ************************************
   static const String badRequestError = "badRequestError";
@@ -435,7 +452,6 @@ class AppStrings {
   static const String saveButtonText = "saveButtonText";
   // static const String companyName = "companyName";
   static const String workplace = "workplace";
-  static const String fullNameLabel = "fullNameLabel";
   static const String lastNameLabel = "lastNameLabel";
   static const String hintFirstName = "hintFirstName";
   static const String hintLastName = "hintLastName";

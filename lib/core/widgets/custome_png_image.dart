@@ -7,28 +7,27 @@ class CustomPngImage extends StatelessWidget {
     super.key,
     required this.image,
     this.alignment = Alignment.center,
-    // this.width = 27.0,
-    // this.height = 27.0,
+    // this.width,
+    // this.height,
   });
 
   final String image;
 
-  // double width;
-  // double height;
+  // double? width;
+  // double? height;
   Alignment alignment;
 
   @override
   Widget build(BuildContext context) {
     return image.contains('http')
-        ?Image(
-      alignment: alignment,
-      fit: BoxFit.fill,
-      color: AppColors.transparent,
-      image: NetworkImage(image),
-    ) : Image(
+        ? Image(
+            alignment: alignment,
+            // width: width,
+            // height: height,
             fit: BoxFit.fill,
-            image: AssetImage(image),
+            color: AppColors.transparent,
+            image: NetworkImage(image),
           )
-        ;
+        : Image(fit: BoxFit.fill, image: AssetImage(image));
   }
 }

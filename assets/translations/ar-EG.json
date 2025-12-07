@@ -136,7 +136,7 @@
   "alreadyHaveAnAccount": "سجلت من قبل ؟",
   "register": "سجل حساب جديد",
   "nationalID": "رقم الهوية",
-  "termsAndConditions": "اوافق علي الشروط والاحكام ",
+  "termsAndConditions": "الشروط والاحكام ",
   "conditionsAndTerms": "الشروط والاحكام",
   "alertMessageTerms": "تنبيه: بإدخال رقم البطاقة، تقرّ بصحة البيانات وتتحمل مسؤولية أي خطأ",
   "termsAndConditionsForQarar": "اوافق علي وثيقه الاحكام الخاصه بمنصه قرارا سات",
@@ -162,7 +162,7 @@
   "choose": "اختر",
   "area": "المساحة",
   "from": "من",
-  "confirm": "تطبيق",
+  "confirm": "تأكيد",
   "city": "المدينة",
   "aboutApp": "\"ابدأ رحلتك في عالم المزادات! استعرض أحدث المزادات، وابدأ بالمزايدة على عقارك المفضل الآن .\"",
   "to": "الي",
@@ -227,7 +227,7 @@
   "joinAuction": "دخول المزاد",
   "cancelOrder": "الغاء الطلب",
   "images": "المزاد",
-  "enterYourPhoneNumber": "ادخل رقم هاتفك",
+  "enterYourPhoneNumber": "أدخل رقم هاتفك هنا",
   "congratulations": "تهانينا!",
   "resetPasswordSuccess": "\"تم تغيير كلمة المرور بنجاح. يمكنك الآن تسجيل الدخول بحسابك.\".",
   "bothPasswordMustMatch": "كلمات المرور يجب ان تتطابق",
@@ -462,5 +462,7 @@
   "checkCode": "التحقق من الرمز",
   "checkCodeConclusion1": "لم يصلك البريد الإلكتروني بعد؟ ",
   "checkCodeConclusion2": "أعد الإرسال",
-  "assignNewPassword": "تعيين كلمة مرور جديدة"
+  "assignNewPassword": "تعيين كلمة مرور جديدة",
+  "phoneNum": "رقم الهاتف",
+  "fullName": "الاسم بالكامل"
 }

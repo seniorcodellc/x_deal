@@ -29,7 +29,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       pageController.jumpToPage(OnboardingStatics.onBoardingItems.length - 1);
     } else {
       context.read<OnboardingManagerCubit>().cachedNewInstall();
-      Routes.loginRoute.moveTo();
+      Routes.signUpByPhoneOrEmail.moveTo();
     }
   }
   @override

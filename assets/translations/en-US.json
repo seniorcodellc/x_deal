@@ -134,7 +134,7 @@
   "continueText": "Continue",
   "enterTheFourDigits": "Enter the code sent to your mobile phone",
   "alreadyHaveAnAccount": "registered before?",
-  "termsAndConditions": "Agree Terms and Conditions",
+  "termsAndConditions": "Terms and Conditions",
   "nationalID": "National ID",
   "alertMessageTerms": "Attention: Confirm the card number, verify the accuracy of the data and we are responsible for any error",
   "termsAndConditionsForQarar": "Agree Terms and Conditions For Qarar",
@@ -401,6 +401,7 @@
   "enterCardNameError": "Cardholder name is required",
   "enterCardExpireDateError": "Expiration date is required",
   "enterCardCVVError": "CVV code is required",
+  "fullName": "Full Name",
 
   "nameOnCard": "Name on card",
   "expMMYYYY": "MM/YYYY",
@@ -430,5 +431,6 @@
   "governmentError": "this field is required",
   "pleaseWaitUntilApproved": "please wait until get Approved",
   "loggedInSuccessfully": "logged in successfully",
-  "login": "login"
+  "login": "login",
+  "phoneNum": "Phone Number"
 }

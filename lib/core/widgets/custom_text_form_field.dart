@@ -38,8 +38,8 @@ class CustomTextFormField extends StatefulWidget {
   bool obscureText;
   bool isPassword = false;
   TextStyle? style = getRegularTextStyle(
-    fontSize: 12,
-    color: AppColors.taupeGray,
+    fontSize: 16,
+    color: AppColors.lightGray,
   );
   final String? Function(String?)? validator;
   final Widget? prefixIcon;
@@ -80,7 +80,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   Widget build(BuildContext context) {
     return Container(
       width: 343.w,
-      height: 58.h,
+      height: 56.h,
       decoration: BoxDecoration(
         color: widget.backgroundColor ?? AppColors.white,
         borderRadius: BorderRadius.circular(widget.radiusOfContainer ?? 10.r),
@@ -119,7 +119,10 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
               widget.padding ??
               EdgeInsets.symmetric(horizontal: 16.w, vertical: 18.h),
           hintText: widget.hintText,
-          hintStyle: widget.style,
+          hintStyle: getRegularTextStyle(
+            fontSize: 16,
+            color: AppColors.lightGray,
+          ),
           border: InputBorder.none,
           fillColor: Colors.transparent,
           filled: true,

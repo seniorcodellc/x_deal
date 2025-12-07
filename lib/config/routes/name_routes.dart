@@ -1,5 +1,7 @@
 class Routes {
   static const String splashScreen = "/";
+  static const String signUpByPhoneOrEmail = "/signUpByPhoneOrEmail";
+  static const String otpRoute = "/otpRoute";
   static const String forgetPasswordRoute = "/forgetPassword";
   static const String forgetPasswordRoute2 = "/forgetPassword2";
   static const String enterCodeRoute = "/enterCode";
@@ -23,4 +25,5 @@ class Routes {
   static const String scanRoute = "/scan";
   static const String reservationSteps = "/reservationSteps";
   static const String errorScreenRoute = "/errorScreen";
+  static const String signUp = "/signUp";
 }
