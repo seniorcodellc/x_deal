@@ -25,7 +25,7 @@ class EnterCodeScreenOtp extends StatelessWidget {
             fieldHeight: 52.h,
             fieldWidth: 50.w,
             fieldOuterPadding: getPadding(horizontal: 3.w),
-            inactiveColor: AppColors.iconColor,
+            inactiveColor: AppColors.grayBorder,
             activeColor: AppColors.black,
             selectedColor: AppColors.black,
             selectedFillColor: AppColors.white,

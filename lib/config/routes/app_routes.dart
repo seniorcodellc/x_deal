@@ -16,6 +16,7 @@ import '../../features/authentication/presentation/widgets/gift_pop_up.dart';
 import '../../features/authentication/presentation/screens/login_screen.dart';
 import '../../features/forget_password/presentation/screens/reset_password.dart';
 import '../../features/splash_screen/presentation/screens/splash_screen.dart';
+import '../../features/store_details/presentation/screens/store_details_screen.dart';
 
 class RouteGenerator {
   AnimationType? pageRouteAnimationGlobal;
@@ -104,6 +105,12 @@ class RouteGenerator {
             BlocProvider<ErrorCubit>(create: (context) => ErrorCubit()),
           ],
             child: AddPhoneScreen(),
+          routeSettings: routeSettings,
+        );
+        case Routes.storeDetails:
+        return buildPageRoute<T>(
+
+            child: StoreDetailsScreen(),
           routeSettings: routeSettings,
         );
 

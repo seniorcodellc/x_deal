@@ -91,6 +91,7 @@ class AppAssets {
   static String profilePic = "${SvgImages.svgPath}profile_photo.svg";
   static String copy = "${SvgImages.svgPath}copy.svg";
   static String shopCircle = "${SvgImages.svgPath}shop_circle.svg";
+  static String shareCircle = "${SvgImages.svgPath}share_circle.svg";
 
   //....................XDeal.................................................
   static String profile = "${SvgImages.svgPath}profile.svg";
@@ -111,8 +112,8 @@ class AppAssets {
   static String starFilled = "${SvgImages.svgPath}star_filled.svg";
   static String star = "${SvgImages.svgPath}star.svg";
   static String fav = "${SvgImages.svgPath}fav.svg";
-  static String cilantroLogo = "${SvgImages.svgPath}cilantro_logo.svg";
   static String elabdLogo = "${SvgImages.svgPath}elabd_logo.svg";
+  static String saleBox = "${SvgImages.svgPath}sale_box.svg";
   //! PNG
   static String logo = "${PngImages.imagesPath}logo.png";
   static String logoText = "${PngImages.imagesPath}logo_text.png";
@@ -168,4 +169,7 @@ class AppAssets {
   static String shareMoney2 = "${PngImages.imagesPath}share_money2.png";
   static String waitGift = "${PngImages.imagesPath}wait_gift.png";
   static String decoration = "${PngImages.imagesPath}decoration.png";
+  static String cilantroDetails = "${PngImages.imagesPath}cilantro_details.png";
+  static String cilantroLogo = "${PngImages.imagesPath}cilantro_logo.png";
+
 }

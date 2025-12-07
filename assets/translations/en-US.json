@@ -26,7 +26,7 @@
   "updateYourPhone": "Please update your phone number",
   "phoneUpdateDescription": "To continue using X Deal, please add your phone number.\nThis is a one-time mandatory update to improve your account security on X Deal.",
   "phoneUpdatedSuccessTitle": "Phone Number Updated",
-  "phoneUpdatedSuccessSubtitle": "Your phone number has been updated successfully.\nYou can now continue using X Deal."
+  "phoneUpdatedSuccessSubtitle": "Your phone number has been updated successfully.\nYou can now continue using X Deal.",
   "phoneError": "Phone Error",
   "nameError": "Name Error",
   "gallery": "Gallery",

@@ -48,7 +48,9 @@ class LoginScreen extends StatelessWidget {
                       onPressed: () {
                         checkStringError(context, emailController.text, Errors.EMAIL_ERROR,);
                         checkStringError(context, passwordController.text, Errors.PASSWORD_ERROR,);
-                        if (dontHaveErrors(context)) {}
+                        if (dontHaveErrors(context)) {
+                          Routes.storeDetails.moveTo();
+                        }
                       },
                     ),
                   ),

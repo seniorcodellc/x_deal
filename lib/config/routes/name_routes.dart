@@ -10,6 +10,7 @@ class Routes {
   static const String successPassword = "/successPassword";
   static const String addPhone = "/addPhone";
   static const String successPhone = "/successPhone";
+  static const String storeDetails = "/storeDetails";
   static const String selectLanguageRoute = "/selectLanguageRoute";
   static const String onBoardingRoute = "/onBoarding";
   static const String dashboardRoute = "/dashboard";

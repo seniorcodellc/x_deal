@@ -24,11 +24,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       Routes.loginRoute.moveTo();
     }
   }
-  void skip() {
+  void skip() async{
     if (currentPage < OnboardingStatics.onBoardingItems.length - 1) {
       pageController.jumpToPage(OnboardingStatics.onBoardingItems.length - 1);
     } else {
-      context.read<OnboardingManagerCubit>().cachedNewInstall();
+      await context.read<OnboardingManagerCubit>().cachedNewInstall();
       Routes.signUpByPhoneOrEmail.moveTo();
     }
   }
@@ -71,8 +71,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     12.hs,
                     CustomButton(
                       text: isLastPage? AppStrings.createAccount.trans : AppStrings.skip.trans,
-                      onPressed: () async {skip();},
-                      height: 52.0.h, backgroundColor: AppColors.white,
+                      onPressed: () {skip();}, height: 52.0.h, backgroundColor: AppColors.white,
                       borderColor: AppColors.primaryColor, borderRadius: 25, width: 155.w, textColor: AppColors.primaryColor,
                     ),
                   ],
