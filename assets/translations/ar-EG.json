@@ -21,7 +21,7 @@
   "forgetPassword": "نسيت كلمه المرور",
   "haveNoAccount": "ليس لديك حساب ؟",
   "save": "حفظ",
-  "home": "الرئيسية",
+  "home": "الصفحة الرئيسية",
   "passwordResetSuccessTitle": "تم إنشاء كلمة مرور جديدة",
   "passwordResetSuccessSubtitle": "تم انشاء كلمة مرور جديدة يمكنك اعاده الدخول الى\n حساب أكس ديل.",
   "confirmNewPassword": "تاكيد كلمه المرور",
@@ -464,5 +464,8 @@
   "checkCodeConclusion2": "أعد الإرسال",
   "assignNewPassword": "تعيين كلمة مرور جديدة",
   "phoneNum": "رقم الهاتف",
-  "fullName": "الاسم بالكامل"
+  "fullName": "الاسم بالكامل",
+  "shops": "المتاجر",
+  "settings": "الاعدادت",
+  "wallet": "المحفظة"
 }

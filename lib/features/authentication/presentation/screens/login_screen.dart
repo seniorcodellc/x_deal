@@ -22,9 +22,15 @@ class LoginScreen extends StatelessWidget {
                 children: [
                   buildWelcome(),
                   40.vs,
-                  SharedEmailTextField(emailController: emailController, text: AppStrings.emailOrPhone.trans,),
+                  SharedEmailTextField(
+                    emailController: emailController,
+                    text: AppStrings.emailOrPhone.trans,
+                  ),
                   16.vs,
-                  CustomPasswordTextField(passwordController: passwordController, text: AppStrings.password.trans,),
+                  CustomPasswordTextField(
+                    passwordController: passwordController,
+                    text: AppStrings.password.trans,
+                  ),
                   Align(
                     alignment: AlignmentDirectional.bottomEnd,
                     child: TextButton(
@@ -33,7 +39,9 @@ class LoginScreen extends StatelessWidget {
                       },
                       child: Text(
                         AppStrings.forgetPasswordQuestionMark.trans,
-                        style: getRegularTextStyle(color: AppColors.accentColor),
+                        style: getRegularTextStyle(
+                          color: AppColors.accentColor,
+                        ),
                       ),
                     ),
                   ),
@@ -46,9 +54,19 @@ class LoginScreen extends StatelessWidget {
                       borderRadius: 25,
                       text: AppStrings.login.trans,
                       onPressed: () {
-                        checkStringError(context, emailController.text, Errors.EMAIL_ERROR,);
-                        checkStringError(context, passwordController.text, Errors.PASSWORD_ERROR,);
-                        if (dontHaveErrors(context)) {}
+                        checkStringError(
+                          context,
+                          emailController.text,
+                          Errors.EMAIL_ERROR,
+                        );
+                        checkStringError(
+                          context,
+                          passwordController.text,
+                          Errors.PASSWORD_ERROR,
+                        );
+                        if (dontHaveErrors(context)) {
+                          Routes.home.moveTo();
+                        }
                       },
                     ),
                   ),
@@ -71,10 +89,19 @@ class LoginScreen extends StatelessWidget {
       child: Center(
         child: RichText(
           text: TextSpan(
-            style: getRegularTextStyle(fontSize: 15, color: AppColors.blackText),
+            style: getRegularTextStyle(
+              fontSize: 15,
+              color: AppColors.blackText,
+            ),
             children: [
-              TextSpan(text: AppStrings.dontHaveAccount.trans,),
-              TextSpan(text: AppStrings.createAccount.trans, style: getRegularTextStyle(fontSize: 15, color: AppColors.primaryColor, decoration: TextDecoration.underline,),
+              TextSpan(text: AppStrings.dontHaveAccount.trans),
+              TextSpan(
+                text: AppStrings.createAccount.trans,
+                style: getRegularTextStyle(
+                  fontSize: 15,
+                  color: AppColors.primaryColor,
+                  decoration: TextDecoration.underline,
+                ),
               ),
             ],
           ),

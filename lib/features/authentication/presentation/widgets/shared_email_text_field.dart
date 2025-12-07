@@ -12,28 +12,37 @@ class SharedEmailTextField extends StatelessWidget {
   final String text;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          text,
-          style: getRegularTextStyle(fontSize: 15, color: AppColors.blackText),
-        ),
-        10.vs,
-        CustomTextFormField(
-          controller: emailController,
-          hintText: AppStrings.emailHint.trans,
-          style: getRegularTextStyle(color: AppColors.iconColor, fontSize: 14),
-        ),
-        BlocBuilder<ErrorCubit, CubitStates>(
-          builder: (context, state) => ErrorText(
-            showError: context.read<ErrorCubit>().errors.contains(
-              Errors.EMAIL_ERROR,
+    return Padding(
+      padding: getPadding(horizontal: 16.w),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            text,
+            style: getRegularTextStyle(
+              fontSize: 15,
+              color: AppColors.blackText,
             ),
-            text: getError[Errors.EMAIL_ERROR],
           ),
-        ),
-      ],
+          10.vs,
+          CustomTextFormField(
+            controller: emailController,
+            hintText: AppStrings.emailHint.trans,
+            style: getRegularTextStyle(
+              color: AppColors.iconColor,
+              fontSize: 14,
+            ),
+          ),
+          BlocBuilder<ErrorCubit, CubitStates>(
+            builder: (context, state) => ErrorText(
+              showError: context.read<ErrorCubit>().errors.contains(
+                Errors.EMAIL_ERROR,
+              ),
+              text: getError[Errors.EMAIL_ERROR],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

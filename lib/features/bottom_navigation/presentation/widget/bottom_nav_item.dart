@@ -18,34 +18,25 @@ class BottomNavItem extends StatelessWidget {
     return GestureDetector(
       behavior: HitTestBehavior.translucent,
       onTap: onTap,
-      child: Padding(
-        padding: getPadding(horizontal: 10.w, top: 2.h),
-        child: Column(
-          children: [
-            Expanded(
-              child: CustomSVGImage(
-                asset: bottomNavBarModel.asset,
-                color: isSelected
-                    ? AppColors.primaryColor
-                    : AppColors.unselectedTab,
-              ),
+      child: Column(
+        children: [
+          Expanded(
+            child: CustomSVGImage(
+              asset: isSelected
+                  ? bottomNavBarModel.filledAsset
+                  : bottomNavBarModel.asset,
+              // color: isSelected ? AppColors.primaryColor : AppColors.black,
             ),
-            Expanded(
-              child: Text(
-                bottomNavBarModel.tabName.trans,
-                style: isSelected
-                    ? getBoldTextStyle(
-                        fontSize: 14,
-                        color: AppColors.primaryColor,
-                      )
-                    : getRegularTextStyle(
-                        fontSize: 12,
-                        color: AppColors.unselectedTab,
-                      ),
-              ),
+          ),
+          Expanded(
+            child: Text(
+              bottomNavBarModel.tabName.trans,
+              style: isSelected
+                  ? getRegularTextStyle(fontSize: 14, color: AppColors.blue)
+                  : getRegularTextStyle(fontSize: 14, color: AppColors.black),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

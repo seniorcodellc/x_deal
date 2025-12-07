@@ -6,6 +6,7 @@ import 'package:x_deal/features/forget_password/presentation/screens/success_pas
 import 'package:x_deal/features/authentication/presentation/screens/otp_screen.dart';
 import 'package:x_deal/features/authentication/presentation/screens/sign_up_by_phone_or_email.dart';
 import 'package:x_deal/features/authentication/presentation/screens/sign_up_screen.dart';
+import 'package:x_deal/features/home/presentation/screens/home_screen.dart';
 import 'package:x_deal/features/on_boarding/presentation/screens/onboarding_screen.dart';
 
 import 'package:nested/nested.dart';
@@ -61,52 +62,56 @@ class RouteGenerator {
           providers: [
             BlocProvider<ErrorCubit>(create: (context) => ErrorCubit()),
           ],
-            child: LoginScreen(),
+          child: LoginScreen(),
           routeSettings: routeSettings,
         );
-        case Routes.forgetPasswordRoute:
+      case Routes.forgetPasswordRoute:
         return buildPageRoute<T>(
           providers: [
             BlocProvider<ErrorCubit>(create: (context) => ErrorCubit()),
           ],
-            child: ForgetPasswordScreen(),
+          child: ForgetPasswordScreen(),
           routeSettings: routeSettings,
         );
-        case Routes.enterCodeRoute:
+      case Routes.enterCodeRoute:
         return buildPageRoute<T>(
           providers: [
             BlocProvider<ErrorCubit>(create: (context) => ErrorCubit()),
           ],
-            child: EnterCodeScreen(),
+          child: EnterCodeScreen(),
           routeSettings: routeSettings,
         );
-        case Routes.resetPasswordRoute:
+      case Routes.resetPasswordRoute:
         return buildPageRoute<T>(
           providers: [
             BlocProvider<ErrorCubit>(create: (context) => ErrorCubit()),
           ],
-            child: ResetPasswordScreen(),
+          child: ResetPasswordScreen(),
           routeSettings: routeSettings,
         );
-        case Routes.successPassword:
+      case Routes.successPassword:
         return buildPageRoute<T>(
-            child: SuccessPassword(),
+          child: SuccessPassword(),
           routeSettings: routeSettings,
         );
-        case Routes.successPhone:
+      case Routes.successPhone:
         return buildPageRoute<T>(
-            child: SuccessPhone(),
+          child: SuccessPhone(),
           routeSettings: routeSettings,
         );
-        case Routes.addPhone:
+      case Routes.addPhone:
         return buildPageRoute<T>(
           providers: [
             BlocProvider<ErrorCubit>(create: (context) => ErrorCubit()),
           ],
-            child: AddPhoneScreen(),
+          child: AddPhoneScreen(),
           routeSettings: routeSettings,
         );
-
+      case Routes.home:
+        return buildPageRoute<T>(
+          child: HomeScreen(),
+          routeSettings: routeSettings,
+        );
 
       default:
         return MaterialPageRoute(

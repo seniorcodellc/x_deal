@@ -67,10 +67,10 @@ class CustomBackground extends StatelessWidget {
       child: Scaffold(
         key: scaffoldKey,
         drawer: drawer,
-        floatingActionButton: showNavBar
-            ? CustomFloatingActionButton()
-            : floatingActionButton,
 
+        // floatingActionButton: showNavBar
+        //     ? CustomFloatingActionButton()
+        //     : floatingActionButton,
         bottomNavigationBar: showNavBar
             ? BlocBuilder<LanguageCubit, CubitStates>(
                 builder: (context, state) => BottomNavigationWidget(),
@@ -81,8 +81,7 @@ class CustomBackground extends StatelessWidget {
         resizeToAvoidBottomInset: true,
         appBar: title.isNotNull
             ? AppBar(
-                backgroundColor:
-                    appBarBackgroundColor ?? AppColors.white,
+                backgroundColor: appBarBackgroundColor ?? AppColors.white,
                 toolbarHeight: 80.h,
                 title: Text(
                   title!,

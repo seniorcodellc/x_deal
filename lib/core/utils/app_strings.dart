@@ -58,7 +58,6 @@ class AppStrings {
   static const String enterYourPhoneNumber = "enterYourPhoneNumber";
   static const String welcomeToQararSat = "welcomeToQararSat";
   static const String choose = "choose";
-  // static const String settings = "settings";
   static const String headerForgetPassword = "headerForgetPassword";
   static const String purchaseCalculator = "purchaseCalculator";
   static const String waitingForLogout = "waitingForLogout";
@@ -233,7 +232,9 @@ class AppStrings {
   static const String updateYourPhone = 'updateYourPhone';
   static const String phoneUpdateDescription = 'phoneUpdateDescription';
   static const String phoneUpdatedSuccessTitle = 'phoneUpdatedSuccessTitle';
-  static const String phoneUpdatedSuccessSubtitle = 'phoneUpdatedSuccessSubtitle';
+  static const String phoneUpdatedSuccessSubtitle =
+      'phoneUpdatedSuccessSubtitle';
+
   /// **************************** Splash ************************************
   static const String splashHeader = "splashHeader";
   static const String appName = "appName";
@@ -274,7 +275,8 @@ class AppStrings {
   static const String yourEmail = "yourEmail";
   static const String forgetPasswordQuestionMark = "forgetPasswordQuestionMark";
   static const String passwordResetSuccessTitle = 'passwordResetSuccessTitle';
-  static const String passwordResetSuccessSubtitle = 'passwordResetSuccessSubtitle';
+  static const String passwordResetSuccessSubtitle =
+      'passwordResetSuccessSubtitle';
 
   /// **************************** Forget password screen2 ************************************
   ///
@@ -292,17 +294,14 @@ class AppStrings {
   static const String cancel = "cancel";
 
   /// **************************** settings ************************************
-  static const String settings = "settings";
   static const String editProfile = "editProfile";
   static const String changePassword = "changePassword";
 
   /// **************************** bottom nav bar tabs ************************************
   static const String home = "home";
-  static const String points = "points";
-  static const String logs = "logs";
-  static const String operationsLogs = "operationsLogs";
-
-  static const String startNow = "startNow";
+  static const String shops = "shops";
+  static const String wallet = 'wallet';
+  static const String settings = "settings";
 
   /// **************************** error handler ************************************
   static const String badRequestError = "badRequestError";
@@ -373,7 +372,6 @@ class AppStrings {
   static const String liveChat = 'liveChat';
   // static const String home = 'home';
   static const String myProfile = 'myProfile';
-  static const String wallet = 'wallet';
   static const String loans = 'loans';
   static const String faq = 'faq';
   static const String explore = 'explore';
