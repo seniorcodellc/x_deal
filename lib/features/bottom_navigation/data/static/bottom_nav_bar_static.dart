@@ -1,4 +1,3 @@
-
 import '../../../../exports.dart';
 import '../models/bottom_nav_bar_model.dart';
 
@@ -8,21 +7,25 @@ class BottomNavBarStatic {
       asset: AppAssets.home,
       tabName: AppStrings.home,
       systemBarColor: AppColors.gradientColorStart,
+      filledAsset: AppAssets.homeFilled,
     ),
     BottomNavBarModel(
-      asset: AppAssets.loyalty,
-      tabName: AppStrings.points,
-      appBatTitle: AppStrings.pointsSummary,
+      asset: AppAssets.shops,
+      tabName: AppStrings.shops,
+      appBatTitle: AppStrings.shops,
+      filledAsset: AppAssets.shopsFilled,
     ),
     BottomNavBarModel(
-      asset: AppAssets.logs,
-      tabName: AppStrings.logs,
-      appBatTitle: AppStrings.operationsLogs,
+      asset: AppAssets.wallet,
+      tabName: AppStrings.wallet,
+      appBatTitle: AppStrings.wallet,
+      filledAsset: AppAssets.walletFilled,
     ),
     BottomNavBarModel(
-      asset: AppAssets.tabSettings,
+      asset: AppAssets.settings,
       tabName: AppStrings.settings,
       appBatTitle: AppStrings.settings,
+      filledAsset: AppAssets.settingsFilled,
     ),
   ];
 }

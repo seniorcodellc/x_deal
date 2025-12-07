@@ -21,7 +21,7 @@
   "forgetPassword": "نسيت كلمه المرور",
   "haveNoAccount": "ليس لديك حساب ؟",
   "save": "حفظ",
-  "home": "الرئيسية",
+  "home": "الصفحة الرئيسية",
   "passwordResetSuccessTitle": "تم إنشاء كلمة مرور جديدة",
   "passwordResetSuccessSubtitle": "تم انشاء كلمة مرور جديدة يمكنك اعاده الدخول الى\n حساب أكس ديل.",
   "confirmNewPassword": "تاكيد كلمه المرور",
@@ -42,7 +42,7 @@
   "waitingForAcceptRegisterText" :
   "في انتظار موافقة المسؤول",
   "splashHeader":"أهلا بك فى تطبيق نقاط الولاء",
-  "appName": "برنامج نقاط الولاء",
+  "appName": "أكس ديل",
   "splashBody": "نظام إدارة النقاط الذكي",
   "phoneError": "خطأ الهاتف",
   "gallery": "مكتبة الصور",
@@ -449,7 +449,7 @@
   "scanError": "باركود غير مسجل",
   "serialNumber": "الرقم التسلسلى",
   "tryAgain": "اعاده المحاولة مرة أخرى",
-  "goToHomepage": "الصفحة الرئيسية",
+  "goToHomepage": "الصفحةالرئيسية",
   "viewDetailsButton": "عرض التفاصيل",
 "inActive": "غير نشط",
   "verificationQuestion": " سؤال  التحقق من التاجر",
@@ -464,5 +464,8 @@
   "checkCodeConclusion2": "أعد الإرسال",
   "assignNewPassword": "تعيين كلمة مرور جديدة",
   "phoneNum": "رقم الهاتف",
-  "fullName": "الاسم بالكامل"
+  "fullName": "الاسم بالكامل",
+  "shops": "المتاجر",
+  "settings": "الاعدادت",
+  "wallet": "المحفظة"
 }

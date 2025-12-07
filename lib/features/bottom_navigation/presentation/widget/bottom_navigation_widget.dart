@@ -21,13 +21,20 @@ class BottomNavigationWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<BottomNavOperationCubit, int>(
       builder: (context, state) => Container(
-        height: 64.h,
+        height: 88.h,
         width: 375.w,
         decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              offset: Offset(0, 5),
+              blurRadius: 18.r,
+              color: AppColors.blue.withOpacity(0.15),
+            ),
+          ],
           color: AppColors.white,
           borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(20.r),
-            topRight: Radius.circular(20.r),
+            topLeft: Radius.circular(10.r),
+            topRight: Radius.circular(10.r),
           ),
         ),
         child: Row(
@@ -43,17 +50,10 @@ class BottomNavigationWidget extends StatelessWidget {
                     context.read<BottomNavOperationCubit>().changIndex(index);
                   },
                 ),
-                index == 1 ? 50.hs : SizedBox.shrink(),
+                // index == 1 ? 50.hs : SizedBox.shrink(),
               ],
             ),
           ),
-          /*   [
-          bottomNavBarTab(0),
-          bottomNavBarTab(1),
-          45.hs,
-          bottomNavBarTab(2),
-          bottomNavBarTab(3),
-        ],*/
         ),
       ),
     );

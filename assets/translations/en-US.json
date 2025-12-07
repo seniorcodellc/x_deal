@@ -432,5 +432,9 @@
   "pleaseWaitUntilApproved": "please wait until get Approved",
   "loggedInSuccessfully": "logged in successfully",
   "login": "login",
-  "phoneNum": "Phone Number"
+  "phoneNum": "Phone Number",
+  "shops": "Shops",
+  "settings": "Settings",
+  "wallet": "Wallet",
+  "appName": "XDeal"
 }
