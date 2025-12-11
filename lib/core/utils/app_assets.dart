@@ -115,6 +115,8 @@ class AppAssets {
   static String elabdLogo = "${SvgImages.svgPath}elabd_logo.svg";
   static String like = "${SvgImages.svgPath}like.svg";
   static String saleBox = "${SvgImages.svgPath}sale_box.svg";
+
+  //....................................XDeal................................................
   //! PNG
   static String logo = "${PngImages.imagesPath}logo.png";
   static String logoText = "${PngImages.imagesPath}logo_text.png";
@@ -127,9 +129,6 @@ class AppAssets {
   static String arabic = "${PngImages.imagesPath}arabic.png";
   static String searchNoOffers = "${PngImages.imagesPath}search_no_offers.png";
   static String searchFailed = "${PngImages.imagesPath}search_failed.png";
-  static String rewards1 = "${PngImages.imagesPath}rewards1.png";
-
-  //....................................XDeal................................................
   static String message = "${PngImages.imagesPath}message.png";
   static String vodafoneCash = "${PngImages.imagesPath}vodafone_cash.png";
   static String eAndMoney = "${PngImages.imagesPath}e_and_money.png";
@@ -173,5 +172,7 @@ class AppAssets {
   static String decoration = "${PngImages.imagesPath}decoration.png";
   static String cilantroDetails = "${PngImages.imagesPath}cilantro_details.png";
   static String cilantroLogo = "${PngImages.imagesPath}cilantro_logo.png";
-
+  static String banner1 = "${PngImages.imagesPath}banner1.png";
+  static String banner2 = "${PngImages.imagesPath}banner2.png";
+  static String banner3 = "${PngImages.imagesPath}banner3.png";
 }

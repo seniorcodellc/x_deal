@@ -8,7 +8,7 @@ class CustomHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 221.h,
+      height: 190.h,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [AppColors.secondaryColor, AppColors.primaryColor],
@@ -19,7 +19,7 @@ class CustomHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
       child: Padding(
         padding: getPadding(horizontal: 16.w),
         child: Padding(
-          padding: getPadding(top: 50.h),
+          padding: getPadding(top: 30.h),
           child: Column(
             children: [
               Row(

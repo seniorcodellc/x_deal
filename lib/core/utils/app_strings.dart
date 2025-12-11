@@ -276,6 +276,14 @@ class AppStrings {
   static const String restaurantCafe = "مطاعم\nوكافيهات";
   static const String games = "ألعاب";
   static const String fashion = "موضة";
+  static const String storesHighestDiscounts = "المتاجر أعلى خصومات";
+  static const String storesMostFamous = "المتاجر أكثر شهرة";
+  static const String cilantroCaffe = "سلينترو كافيه";
+  static const String rate = "(4.1)";
+  static const String buffaloBurger = "بافلو برجر";
+  static const String defacto = "ديفاكتو";
+  static const String dejavu = "ديجافو";
+  static const String dunkinDonuts = "دانكن دونتس";
 
   /// **************************** Forget password screen ************************************
   ///
